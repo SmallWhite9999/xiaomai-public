@@ -1,0 +1,153 @@
+{
+  "schema": "TRUE_CPU_CONTINUATION_INDEPENDENT_ACCEPTANCE_V1",
+  "status": "PASS_SECOND_UPDATE_NEW_SAVE_AND_COMPLETE_LINEAGE_READBACK",
+  "checkpoint_sha256": "0ca1fbe7164dfa1d2fa0f9fbab4db85760cab9eeb21df8c9ff71c7d6709e29d0",
+  "graph_sha256": "4e4ed1f571baddccf4ba1d055bf806cbf605feae8e46c410b6cfd34b5b02f88e",
+  "parent_checkpoint_sha256": "9bcdabea107745c002e863388afa74bb9dca5d6469c615fb421662fa599ca30a",
+  "formal_a100_checkpoint_sha256": "801373f7023d315ec9b311a86547aca01831fe5eedb4b0f2493337e6bd0459d1",
+  "checks": {
+    "supervisor_zero_exit_and_job_empty": true,
+    "supervisor_exact_command_parent_binding": true,
+    "supervisor_output_hashes": true,
+    "worker_continuation_status_and_scope": true,
+    "newest_restore_not_prematurely_accepted": true,
+    "save_receipts_agree": true,
+    "new_checkpoint_exact_hash": true,
+    "new_graph_exact_hash": true,
+    "new_saved_format_and_reviewed_plan": true,
+    "parent_cpu_checkpoint_and_graph_unchanged": true,
+    "parent_after_equals_child_before": true,
+    "once_only_python_learning_calls": true,
+    "fresh_python_gradient_tape_completed": true,
+    "rounding_and_backend_detached": true,
+    "pager_detached_and_consumed_shards_unchanged": true,
+    "in_process_all_parameter_master_existing_moment_ids_preserved": true,
+    "all_counter_records_agree": true,
+    "exactly_five_to_six": true,
+    "twenty_five_changes_and_gradient_names_agree": true,
+    "one_original_credit_update_and_duplicate_rejection": true,
+    "fresh_tool_observation_executed_not_consumed": true,
+    "unselected_wrapper_descriptor_boundary": true,
+    "new_observation_matches_update_not_prior_receipt": true,
+    "new_tool_stream_hashes": true,
+    "new_observation_and_plan_canonical_hashes": true,
+    "tool_source_and_host_fixed_boundary": true,
+    "measured_return_matches_predeclared_contract": true,
+    "inert_parser_helper_hashes_bound": true,
+    "all_new_private_blob_files_and_typed_bits": true,
+    "owner_master_moments_groups_scope": true,
+    "formal_a100_original_cp_graph_unchanged": true,
+    "complete_original_cpu_root_latest_a100_lineage": true,
+    "all_ancestor_refs_remap_to_real_original": true,
+    "all_parent_and_formal_original_private_blobs_unchanged": true,
+    "all_before_parent_and_after_new_checkpoint_owner_bits_equal": true,
+    "detached_integration_receipt_saved_exactly": true,
+    "rng_and_lazy_external_base_scope": true,
+    "execution_pins02_exact_command_binding": true,
+    "all_execution_recorded_graph_plan_sources_and_helpers_same_bytes": true
+  },
+  "private_blob_files_typed_bits_checked": 113,
+  "private_tensor_refs": 179,
+  "ancestor_descriptors": 763,
+  "owner_counts": {
+    "owner_count": 47,
+    "master_count": 47,
+    "moment_owner_count": 29,
+    "group_count": 2,
+    "graph_ownership_topology_fully_parsed": false,
+    "source": "PINNED_CHECKPOINT_JSON_AND_RECORDED_OWNER_REPORT",
+    "globals_called": 0
+  },
+  "changed_parameter_names": [
+    "research_neural.core.action_score.weight",
+    "research_neural.core.gate.bias",
+    "research_neural.core.gate.weight",
+    "research_neural.core.initial",
+    "research_neural.core.k.weight",
+    "research_neural.core.norm.bias",
+    "research_neural.core.norm.weight",
+    "research_neural.core.outcome_head.0.bias",
+    "research_neural.core.outcome_head.0.weight",
+    "research_neural.core.outcome_head.2.bias",
+    "research_neural.core.outcome_head.2.weight",
+    "research_neural.core.proposal.0.bias",
+    "research_neural.core.proposal.0.weight",
+    "research_neural.core.proposal.2.bias",
+    "research_neural.core.proposal.2.weight",
+    "research_neural.core.q.weight",
+    "research_neural.core.v.weight",
+    "research_neural.core.value_head.0.bias",
+    "research_neural.core.value_head.0.weight",
+    "research_neural.core.value_head.2.bias",
+    "research_neural.core.value_head.2.weight",
+    "research_neural.encoder.norm.bias",
+    "research_neural.encoder.norm.weight",
+    "research_neural.encoder.projection.bias",
+    "research_neural.encoder.projection.weight"
+  ],
+  "recorded_gradient_owner_count": 25,
+  "learning_calls": {
+    "python_tape_forward": 1,
+    "python_tape_backward": 1,
+    "python_adamw_step": 1,
+    "native_learning_guard_entered": 1
+  },
+  "counters_before": {
+    "committed_revision": 5,
+    "invalidation_epoch": 5,
+    "research_weight_revision": 5,
+    "inference_state_cleared": true
+  },
+  "counters_after": {
+    "committed_revision": 6,
+    "invalidation_epoch": 6,
+    "research_weight_revision": 6,
+    "inference_state_cleared": true
+  },
+  "source_files_rehashed": {
+    "execution": 895,
+    "recorded_python_unique_paths": 3342,
+    "graph_sources": 108,
+    "bound_plan_sources": 108,
+    "prior_generation_blobs": {
+      "PRIVATE_EXTERNAL_REFERENCE_1": 113,
+      "PRIVATE_EXTERNAL_REFERENCE_2": 112
+    }
+  },
+  "seconds": 1255.5620000000054,
+  "guard_exit_code": 0,
+  "guard_job_active_processes_after_cleanup": 0,
+  "scope_notes": [
+    "Saved owner values are independently reconciled with inert private blob typed hashes. Graph execution, gradient generation and consumed-base postcheck use mutually consistent pinned worker receipts; the auditor did not recompute an update.",
+    "Frozen 9B features remain native CPU; research Tape/AdamW and scalar rounding are the specific INTEGRATION execution path. Generic native-autograd labels in original probe/PAGER are not actual backward claims.",
+    "Complete lineage retains original, CPU root, formal latest A100, parent CPU save and this new CPU generation. Lazy external base values are not all materialized or independently rehashed.",
+    "This is a fresh new host-fixed tool observation and update. It is not same-step reference-versus-restored numerical equivalence or autonomous research."
+  ],
+  "model_loaded_by_auditor": false,
+  "torch_imported_by_auditor": false,
+  "graph_unpickled_by_auditor": false,
+  "newest_saved_checkpoint_restore_accepted_by_this_receipt": false,
+  "two_process_next_update_numerical_equivalence_proven": false,
+  "full_python_conversion_complete": false,
+  "autonomous_problem_redefinition_proven": false,
+  "_public_export": {
+    "source_receipt_relative_to_private_run": "audit/CONTINUATION_INDEPENDENT_ACCEPTANCE.json",
+    "source_receipt_sha256": "5e55d74fe908196b941446865d2c3b0a2dd178f9710c77e4b4b2f2f1eda6f9ea",
+    "omitted_fields": [
+      "artifacts_sha256"
+    ],
+    "private_run_record_not_rerun_here": true,
+    "raw_receipt_and_external_model_state_not_distributed": true,
+    "hash_binds_origin_only_not_independent_capability_proof": true,
+    "absolute_path_redactions": [
+      {
+        "public_label": "PRIVATE_EXTERNAL_REFERENCE_1",
+        "original_path_sha256": "831c865c6bc74d2a500bcd26e52e06a91c23bf79ad4ccfc20e66eb214edc51cc"
+      },
+      {
+        "public_label": "PRIVATE_EXTERNAL_REFERENCE_2",
+        "original_path_sha256": "e20feef2ac4a58ea3baef1c46c4f57823297ebe137090984c42b5eb83e247d79"
+      }
+    ]
+  }
+}

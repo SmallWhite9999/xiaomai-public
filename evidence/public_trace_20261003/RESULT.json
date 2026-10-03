@@ -1,0 +1,56 @@
+{
+  "status": "PASS_CPU_COMPLETE_CHUNK_GRAPH_SCOPE",
+  "receipt": {
+    "status": "ACCEPTED_COMPLETE_NUMERIC_SCOPE",
+    "events": 1482,
+    "nodes": 542,
+    "reverse_edges": 926,
+    "zero_contribution_edges": 273,
+    "seeds": 10,
+    "source_sha256": "53ba6f7cac251c437021ef07993a9f7cfbc585d8dc71c4882b7cb2de2a705e4e",
+    "final_sha256": "583e32e2ff0f0a9ed215d1f405d9bc18d7b53fae0be06e546ce3a4def00e298d",
+    "arithmetic_recomputed": true,
+    "all_reverse_edges_recomputed": true,
+    "output_and_final_state_seeded_same_graph": true,
+    "actual_gpu": false,
+    "current_true_restored": false,
+    "full_model_trace": false
+  },
+  "independent_reread": {
+    "status": "NUMERIC_GRAPH_VALIDATED",
+    "events": 1482,
+    "nodes": 542,
+    "reverse_edges": 926,
+    "zero_contribution_edges": 273,
+    "seeds": 10,
+    "source_sha256": "53ba6f7cac251c437021ef07993a9f7cfbc585d8dc71c4882b7cb2de2a705e4e",
+    "final_sha256": "583e32e2ff0f0a9ed215d1f405d9bc18d7b53fae0be06e546ce3a4def00e298d",
+    "arithmetic_recomputed": true,
+    "all_reverse_edges_recomputed": true,
+    "output_and_final_state_seeded_same_graph": true
+  },
+  "observer_on_off_bitwise": {
+    "output": true,
+    "state": true,
+    "q": true,
+    "k": true,
+    "v": true,
+    "g": true,
+    "beta": true,
+    "initial": true
+  },
+  "shape": [
+    1,
+    3,
+    1,
+    2
+  ],
+  "value_dimension": 2,
+  "trace_bytes": 572176,
+  "trace_sha256": "61938fe37a46ae5f1d3a583c5e3e8c06a56af4def208b94b2ff7e8ac3414310b",
+  "synthetic_public_inputs": true,
+  "private_true_data_read": false,
+  "full_model_trace": false,
+  "gpu_instruction_trace": false,
+  "source_sha256": "53ba6f7cac251c437021ef07993a9f7cfbc585d8dc71c4882b7cb2de2a705e4e"
+}

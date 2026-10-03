@@ -1,0 +1,18 @@
+{
+  "schema": "XIAOMAI_PUBLIC_ORIGINAL_LIFECYCLE_TESTS_V1",
+  "status": "PASS",
+  "exit_code": 0,
+  "timeout_seconds": 60,
+  "seconds": 52.062999999994645,
+  "test_files": [
+    "tests_storage_extension/test_v087_autodiff.py",
+    "tests_storage_extension/test_v088_adam_failures.py",
+    "tests_research/test_research_checkpoint.py"
+  ],
+  "tests": 145,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "synthetic_cpu_only": true,
+  "private_true_checkpoint_read": false
+}

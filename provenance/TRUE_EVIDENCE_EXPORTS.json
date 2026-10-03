@@ -1,0 +1,59 @@
+{
+  "schema": "XIAOMAI_RECORDED_PRIVATE_TRUE_EXPORTS_V1",
+  "exports": [
+    {
+      "source": "audit/FINAL_ACCEPTANCE.json",
+      "source_sha256": "4df9088289bc540105b034cf173b814a1a560ca413088982b0fc3bd95971ed36",
+      "public": "evidence/true_cpu_20261003/FINAL_ACCEPTANCE.public.json",
+      "public_sha256": "b4e824c8c9342c5fda8cde82086924569755bbc16862b8c1d2d02de42665cd55",
+      "omitted_fields": [
+        "receipt_hashes",
+        "receipt_paths"
+      ],
+      "absolute_paths_replaced_by_labels": 0
+    },
+    {
+      "source": "audit/FIRST_UPDATE_INDEPENDENT_ACCEPTANCE.json",
+      "source_sha256": "d3c69318c566a698995e3b6a2e9d85d28c20ee6c274288db6495b80afd41d886",
+      "public": "evidence/true_cpu_20261003/FIRST_UPDATE_INDEPENDENT_ACCEPTANCE.public.json",
+      "public_sha256": "a7fa6c60dc0205eb1b6a4e9bd756dff4596f400e2c6df3e4e7d193b6a6617c69",
+      "omitted_fields": [
+        "artifacts_sha256"
+      ],
+      "absolute_paths_replaced_by_labels": 0
+    },
+    {
+      "source": "audit/PARENT_AFTER_CHILD_BEFORE_READBACK.json",
+      "source_sha256": "d84870ecb886a0e4cb0d268e65aea0ee2ad3a290ba0e32142a39b1f1267bf498",
+      "public": "evidence/true_cpu_20261003/PARENT_AFTER_CHILD_BEFORE_READBACK.public.json",
+      "public_sha256": "2f8e9cf9f025f8d229a496cc0328bea57afda3322980531364b4890d7a4ba0b2",
+      "omitted_fields": [
+        "artifacts_sha256"
+      ],
+      "absolute_paths_replaced_by_labels": 0
+    },
+    {
+      "source": "audit/CONTINUATION_INDEPENDENT_ACCEPTANCE.json",
+      "source_sha256": "5e55d74fe908196b941446865d2c3b0a2dd178f9710c77e4b4b2f2f1eda6f9ea",
+      "public": "evidence/true_cpu_20261003/CONTINUATION_INDEPENDENT_ACCEPTANCE.public.json",
+      "public_sha256": "cadc1a02c82aaebe6ae90d358aba107703401cba24f6b35c02010a8aeb6a8596",
+      "omitted_fields": [
+        "artifacts_sha256"
+      ],
+      "absolute_paths_replaced_by_labels": 2
+    },
+    {
+      "source": "actual_saved_restore_01/worker/INDEPENDENT_ACCEPTANCE.json",
+      "source_sha256": "9a480ca2139677fead27b9db209d552c90476cfd0b41412a038fdd14d8c8c384",
+      "public": "evidence/true_cpu_20261003/INDEPENDENT_ACCEPTANCE.public.json",
+      "public_sha256": "1f2964ee07da3f18c2070e1e879eab37fedd4e14dced4084066150946d4ea766",
+      "omitted_fields": [
+        "checkpoint",
+        "custody_files"
+      ],
+      "absolute_paths_replaced_by_labels": 0
+    }
+  ],
+  "private_model_or_checkpoint_values_read_by_exporter": false,
+  "scope": "Recorded engineering evidence, independently runnable public examples are separate."
+}

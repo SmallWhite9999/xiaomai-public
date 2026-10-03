@@ -1,0 +1,110 @@
+{
+  "schema": "XIAOMAI_PUBLIC_PACKAGING_V1",
+  "purpose": "source review and bounded reproduction",
+  "trace_files": [
+    {
+      "source": "output/xiaomai_true_integration_20261003_01/source/chunk_lane/chunk_training/__init__.py",
+      "source_sha256": "8c5d4ffa01856637f372d55ed836c9e3891f940a2f91a31fd2864d6b88cfb2c8",
+      "public_path": "src/chunk_training/__init__.py",
+      "public_sha256": "8c5d4ffa01856637f372d55ed836c9e3891f940a2f91a31fd2864d6b88cfb2c8",
+      "byte_identical": true,
+      "packaging_edits": []
+    },
+    {
+      "source": "output/xiaomai_true_integration_20261003_01/source/chunk_lane/chunk_training/chunk_vjp.py",
+      "source_sha256": "53ba6f7cac251c437021ef07993a9f7cfbc585d8dc71c4882b7cb2de2a705e4e",
+      "public_path": "src/chunk_training/chunk_vjp.py",
+      "public_sha256": "53ba6f7cac251c437021ef07993a9f7cfbc585d8dc71c4882b7cb2de2a705e4e",
+      "byte_identical": true,
+      "packaging_edits": []
+    },
+    {
+      "source": "output/xiaomai_true_integration_20261003_01/source/chunk_lane/chunk_training/bounded_chunk.py",
+      "source_sha256": "07cdf405d06ad3fbb05a0d3ec502a5cf491378d3602ffc5201b4be6d30ff78fe",
+      "public_path": "src/chunk_training/bounded_chunk.py",
+      "public_sha256": "07cdf405d06ad3fbb05a0d3ec502a5cf491378d3602ffc5201b4be6d30ff78fe",
+      "byte_identical": true,
+      "packaging_edits": []
+    },
+    {
+      "source": "output/xiaomai_true_integration_20261003_01/source/trace_lane/chunk_trace.py",
+      "source_sha256": "1ab08edc8875cb5a7c2eedefedc94e257721d8c4406a881a62f7efe54ce0240b",
+      "public_path": "src/xiaomai_trace/chunk_trace.py",
+      "public_sha256": "71584708bd4da21304f663d3a0fcfa33d338d38da70fd3ba6df8044d0b4d5efe",
+      "byte_identical": false,
+      "packaging_edits": [
+        {
+          "before": "CHUNK_SOURCE = ROOT / \"chunk_lane/chunk_training/chunk_vjp.py\"",
+          "after": "CHUNK_SOURCE = ROOT / \"chunk_training/chunk_vjp.py\""
+        },
+        {
+          "before": "sys.path.insert(0, str(ROOT / \"chunk_lane\"))\n",
+          "after": ""
+        }
+      ]
+    },
+    {
+      "source": "output/xiaomai_true_integration_20261003_01/source/trace_lane/run_witness.py",
+      "source_sha256": "65732c405dc0cbe898320e7ee2dfa99f012f0f4e2598964d73d802ff19f21f39",
+      "public_path": "examples/run_trace_demo.py",
+      "public_sha256": "014a6334e943a36f6916d527c50684e9273fa8e2f0069f3bdc4cd72a7001b483",
+      "byte_identical": false,
+      "packaging_edits": [
+        {
+          "before": "from chunk_trace import CHUNK_SOURCE, NAMES, chunk_vjp, run_trace, validate_trace",
+          "after": "from xiaomai_trace.chunk_trace import CHUNK_SOURCE, NAMES, chunk_vjp, run_trace, validate_trace"
+        }
+      ]
+    },
+    {
+      "source": "output/xiaomai_true_integration_20261003_01/source/trace_lane/tests/test_chunk_trace.py",
+      "source_sha256": "e8cff43a7b65e52fd45ecae4e9b137039a64627c32558d9efda8d73faff570e4",
+      "public_path": "tests/test_chunk_trace.py",
+      "public_sha256": "418e9a8d3a9f63215d64c27ec776e42ea53605d550d7dc24ed59485e61f4022b",
+      "byte_identical": false,
+      "packaging_edits": [
+        {
+          "before": "LANE = Path(__file__).resolve().parents[1]\nsys.path.insert(0, str(LANE))\nimport chunk_trace as trace",
+          "after": "from xiaomai_trace import chunk_trace as trace"
+        }
+      ]
+    },
+    {
+      "source": "output/xiaomai_public_review_20261003_work/lifecycle_candidate/run_lifecycle_demo.py",
+      "source_sha256": "efdd0fdb2c5e50acb6a4c39d3470020dc4eaa6cd366adebd174c35ae26a06472",
+      "public_path": "examples/run_lifecycle_demo.py",
+      "public_sha256": "efdd0fdb2c5e50acb6a4c39d3470020dc4eaa6cd366adebd174c35ae26a06472",
+      "byte_identical": true,
+      "packaging_edits": []
+    },
+    {
+      "source": "output/xiaomai_public_review_20261003_work/lifecycle_candidate/run_lifecycle_tests.py",
+      "source_sha256": "21dd5f21d8bc57ce042481be428f6265fbdfb029c5e62759eed199d57a469cb3",
+      "public_path": "examples/run_lifecycle_tests.py",
+      "public_sha256": "21dd5f21d8bc57ce042481be428f6265fbdfb029c5e62759eed199d57a469cb3",
+      "byte_identical": true,
+      "packaging_edits": []
+    },
+    {
+      "source": "output/xiaomai_public_review_20261003_work/lifecycle_candidate/requirements-lifecycle.txt",
+      "source_sha256": "91aa1de00866d48467204c70d31659ace5332f195e37cb69986932db5ea49b51",
+      "public_path": "requirements-lifecycle.txt",
+      "public_sha256": "91aa1de00866d48467204c70d31659ace5332f195e37cb69986932db5ea49b51",
+      "byte_identical": true,
+      "packaging_edits": []
+    },
+    {
+      "source": "output/xiaomai_public_review_20261003_work/lifecycle_candidate/requirements-test.txt",
+      "source_sha256": "55d4b7f54f9dfc77a2791df4ebd127a2f8a306d73c163785f2a49eafb81875c0",
+      "public_path": "requirements-test.txt",
+      "public_sha256": "55d4b7f54f9dfc77a2791df4ebd127a2f8a306d73c163785f2a49eafb81875c0",
+      "byte_identical": true,
+      "packaging_edits": []
+    }
+  ],
+  "lifecycle_manifest": "vendor/lifecycle_source/SOURCE_MANIFEST.json",
+  "lifecycle_source_unchanged": true,
+  "changes_are_import_and_layout_only_for_trace": true,
+  "publication_target": "https://github.com/SmallWhite9999/xiaomai-public",
+  "verification_phase": "LOCAL_PACKAGE_BEFORE_FIRST_PUBLIC_PUSH"
+}

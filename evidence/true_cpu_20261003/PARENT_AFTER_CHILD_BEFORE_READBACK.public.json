@@ -1,0 +1,46 @@
+{
+  "schema": "PARENT_AFTER_CHILD_BEFORE_EXACT_CPU_STATE_READBACK_V1",
+  "status": "PASS_PARENT_SAVED_STATE_TO_FRESH_CHILD_START",
+  "parent_checkpoint_sha256": "9bcdabea107745c002e863388afa74bb9dca5d6469c615fb421662fa599ca30a",
+  "parent_graph_sha256": "cf9a73584b3984e407324a4a192610268df261383b15275637bc8af545b00d62",
+  "parent_writer_pid": 14936,
+  "child_reader_pid": 15936,
+  "owner_values_exact_equal": true,
+  "selected_parameter_and_master_owners": 47,
+  "moment_owner_count": 29,
+  "optimizer_group_count": 2,
+  "full_model_parameter_name_count": 799,
+  "counters_exact_equal": {
+    "committed_revision": 5,
+    "invalidation_epoch": 5,
+    "research_weight_revision": 5,
+    "inference_state_cleared": true
+  },
+  "rng_state_sha256": "6b819a12118419f220186e26a66fcdc9b4f9fc5ffd8209a9b0a87431de9a9008",
+  "cpu_rng_restore_receipt_matches_saved_graph_policy": true,
+  "cuda_rng_restored": false,
+  "materialized_tensor_values_verified_by_child": 191,
+  "lazy_ancestor_descriptor_only_refs": 751,
+  "alias_checks_all_pass": true,
+  "owner_object_ids_compared_for_cross_process_equality": false,
+  "storage_pointers_compared_for_cross_process_equality": false,
+  "scope": "Typed tensor digests, moment/group membership, counters and saved CPU RNG binding at child start. Object IDs are process-local.",
+  "child_next_update_status": "IN_PROGRESS_NOT_ACCEPTED_BY_THIS_RECEIPT",
+  "child_new_checkpoint_saved_or_accepted_by_this_receipt": false,
+  "same_next_update_reference_bitwise_comparison": false,
+  "all_frozen_base_values_materialized": false,
+  "source_files_modified": false,
+  "graph_unpickled_by_auditor": false,
+  "model_loaded_by_auditor": false,
+  "_public_export": {
+    "source_receipt_relative_to_private_run": "audit/PARENT_AFTER_CHILD_BEFORE_READBACK.json",
+    "source_receipt_sha256": "d84870ecb886a0e4cb0d268e65aea0ee2ad3a290ba0e32142a39b1f1267bf498",
+    "omitted_fields": [
+      "artifacts_sha256"
+    ],
+    "private_run_record_not_rerun_here": true,
+    "raw_receipt_and_external_model_state_not_distributed": true,
+    "hash_binds_origin_only_not_independent_capability_proof": true,
+    "absolute_path_redactions": []
+  }
+}

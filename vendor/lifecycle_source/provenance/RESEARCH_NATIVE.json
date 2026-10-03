@@ -1,0 +1,25 @@
+{
+  "base_commit": "806a44767ad64445ff324e1ae41dca77acf23d6c",
+  "files": {
+    "experiments/ornith_problem_formation_v1/research_neural.py": {
+      "git_blob": "cb9c7574ccd22d8d7742c8c57de38178e7cbe5a9",
+      "sha256": "4cf397aa49380b85c7ff83def6fa52a49012480253ba65b6d7256b044fbb2a2e",
+      "bytes": 23486
+    },
+    "experiments/ornith_problem_formation_v1/attention_memory.py": {
+      "git_blob": "bcacc5d37b8bd745b6c20f66393f5d477e42319a",
+      "sha256": "9ac11b6a53a037f3dbad8bc7ef156d72d00705da2b72cf87374c2a1eb54753cd",
+      "bytes": 4223
+    },
+    "experiments/ornith_problem_formation_v1/test_research_neural.py": {
+      "git_blob": "2a76e8049581f92a983b31744e27901836505945",
+      "sha256": "1ffdd18b8f495bff58d9a18045b591e3bdeffb4350052c74cba8ef8e1a6ae51a",
+      "bytes": 21260
+    },
+    "experiments/ornith_research_credit_v1/baseline/research_primitives.py": {
+      "git_blob": "b1d10a29381192a55f697c6740306fe16529addf",
+      "sha256": "b1b5b24c2190777cd1db8229a7cfaf0ba8191ea334b9f3a6a3d124dd0ce25ead",
+      "bytes": 10707
+    }
+  }
+}

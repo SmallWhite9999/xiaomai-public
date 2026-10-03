@@ -1,0 +1,65 @@
+{
+  "schema": "XIAOMAI_PUBLIC_REVIEW_CHECKS_V1",
+  "date": "2026-10-03",
+  "status": "PASS_BOUNDED_PUBLIC_CPU_EXAMPLES",
+  "source_layout": "Public staging package after import/layout adaptations",
+  "trace_demo_status": "PASS_CPU_COMPLETE_CHUNK_GRAPH_SCOPE",
+  "trace_tests": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "lifecycle_demo_status": "PINNED_RESEARCH_PYTHON_TRAINING_LITERAL_CONTINUATION_PASS",
+  "lifecycle_demo_seconds": 40.17200000000594,
+  "lifecycle_tests": {
+    "schema": "XIAOMAI_PUBLIC_ORIGINAL_LIFECYCLE_TESTS_V1",
+    "status": "PASS",
+    "exit_code": 0,
+    "timeout_seconds": 60,
+    "seconds": 52.062999999994645,
+    "test_files": [
+      "tests_storage_extension/test_v087_autodiff.py",
+      "tests_storage_extension/test_v088_adam_failures.py",
+      "tests_research/test_research_checkpoint.py"
+    ],
+    "tests": 145,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "synthetic_cpu_only": true,
+    "private_true_checkpoint_read": false
+  },
+  "vendor_files_rehashed": 72,
+  "syntax_and_local_links_checked": true,
+  "credential_and_absolute_local_path_pattern_scan": "no matching pattern in selected files",
+  "dependency_environment": {
+    "python": "3.12.14",
+    "os": "Windows",
+    "public_trace_installed_editably_in_dedicated_venv": true,
+    "existing_verified_dependency_runtime_reused": true,
+    "clean_network_dependency_install_verified": "trace only; lifecycle reused verified local dependencies",
+    "runtime": {
+      "torch": "2.14.0+cpu",
+      "numpy": "2.5.3",
+      "transformers": "5.12.1",
+      "numba": "0.67.0",
+      "psutil": "7.2.2"
+    },
+    "pytest": "9.0.2",
+    "clean_trace_dependency_install_verified": true,
+    "clean_trace_runtime": {
+      "python": "3.12.14",
+      "numpy": "2.5.3",
+      "pytest": "9.1.1"
+    }
+  },
+  "private_true_run_rerun_in_public_checks": false,
+  "private_model_or_checkpoint_values_distributed": false,
+  "gpu_verified": false,
+  "autonomous_problem_redefinition_verified": false,
+  "github_actions_run_verified": false,
+  "clean_trace_demo_and_26_tests_passed": true,
+  "publication_target": "https://github.com/SmallWhite9999/xiaomai-public",
+  "verification_phase": "LOCAL_PACKAGE_BEFORE_FIRST_PUBLIC_PUSH"
+}

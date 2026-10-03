@@ -1,0 +1,108 @@
+{
+  "schema": "INDEPENDENT_NEWEST_SAVED_TRUE_CPU_RESTORE_ONLY_V2",
+  "status": "PASS_NEWEST_SAVED_CPU_TYPED_VALUES_OWNERS_AND_RNG_ONLY",
+  "checkpoint_sha256": "0ca1fbe7164dfa1d2fa0f9fbab4db85760cab9eeb21df8c9ff71c7d6709e29d0",
+  "writer_process_id": 15936,
+  "reader_process_id": 25576,
+  "writer_and_reader_differ": true,
+  "worker_sha256": "127b4afb8b1be608f1ea021d4712aaaa0564822894305bdeb491631180f5ec4d",
+  "reviewed_plan_sha256": "c23cb6a4b47627016a4d9cc4cfc87543566b7c34aea232d69c47244dc154dc8e",
+  "execution_pins_sha256": "27dc32d6b414afc9641d5d989b5e3e372f6b3f284a167d9a5865698d51e0e45f",
+  "checkpoint_graph_before_after": {
+    "checkpoint": "0ca1fbe7164dfa1d2fa0f9fbab4db85760cab9eeb21df8c9ff71c7d6709e29d0",
+    "graph": "4e4ed1f571baddccf4ba1d055bf806cbf605feae8e46c410b6cfd34b5b02f88e"
+  },
+  "custody_mode": "windows_read_share_only",
+  "source_and_checkpoint_unchanged": true,
+  "materialized_tensor_values_checked": 190,
+  "lazy_frozen_ancestor_refs": 752,
+  "live_gradient_owner_refs_checked": 0,
+  "live_owner_binding_recheck": {
+    "status": "HOST_OWNER_IDENTITIES_VALUES_AND_MOMENTS_UNCHANGED",
+    "training_executed": false,
+    "master_reinitialized": false
+  },
+  "live_owner_topology": {
+    "selected_parameters": 47,
+    "masters": 47,
+    "nonempty_moment_owners": 29,
+    "groups": 2,
+    "live_alias_refs_checked": true
+  },
+  "restore_alias_checks": {
+    "learner_namespace": true,
+    "retention_model": true,
+    "generator_model": true,
+    "generator_trace": true,
+    "generator_tokenizer": true,
+    "core_neural_model": true,
+    "core_neural_namespace_if_present": true,
+    "credit_namespace": true,
+    "credit_learner": true,
+    "core_namespace": true,
+    "record_index": true
+  },
+  "cpu_rng_at_restore_return": {
+    "status": "PASS_EXACT_PYTHON_NUMPY_TORCH_CPU_RNG",
+    "saved_policy_sha256": "4a9de2d2d057afcbb4a54832aa488fa40fd99acc1dc2c432dcd427ed6c1c3d6b",
+    "actual_cpu_with_inert_saved_cuda_sha256": "4a9de2d2d057afcbb4a54832aa488fa40fd99acc1dc2c432dcd427ed6c1c3d6b",
+    "cuda_bytes_retained_inactive": 1,
+    "cuda_rng_accessed_or_restored": false,
+    "state_bytes_exposed": false
+  },
+  "cpu_rng_after_all_checks": {
+    "status": "PASS_EXACT_PYTHON_NUMPY_TORCH_CPU_RNG",
+    "saved_policy_sha256": "4a9de2d2d057afcbb4a54832aa488fa40fd99acc1dc2c432dcd427ed6c1c3d6b",
+    "actual_cpu_with_inert_saved_cuda_sha256": "4a9de2d2d057afcbb4a54832aa488fa40fd99acc1dc2c432dcd427ed6c1c3d6b",
+    "cuda_bytes_retained_inactive": 1,
+    "cuda_rng_accessed_or_restored": false,
+    "state_bytes_exposed": false
+  },
+  "rng_not_consumed_during_independent_checks": true,
+  "restore_receipt_sha256": "51761852ea5309de09ec25ed9ca80663066cdbb2440b7ad731b1533b84c23283",
+  "raw_values_receipt_sha256": "b43a5ee629c861be30cacd976e470a436865f5fbed2b7a28d4bd42338b9c4d80",
+  "live_owners_receipt_sha256": "aa3237fd17a7e8bd00d5d8637d8d8eb465251fc8eaf8efb73cf9ec5f594afa75",
+  "inert_postcheck": {
+    "status": "SAVED_FILES_AND_TYPED_PRIVATE_BITS_VERIFIED_NO_GRAPH_EXECUTION",
+    "checkpoint_sha256": "0ca1fbe7164dfa1d2fa0f9fbab4db85760cab9eeb21df8c9ff71c7d6709e29d0",
+    "graph_sha256": "4e4ed1f571baddccf4ba1d055bf806cbf605feae8e46c410b6cfd34b5b02f88e",
+    "private_blob_files": 113,
+    "private_tensor_refs": 179,
+    "ancestor_refs_bound_to_original": 763,
+    "ancestor_values_materialized": false,
+    "ownership_metadata": {
+      "owner_count": 47,
+      "master_count": 47,
+      "moment_owner_count": 29,
+      "group_count": 2,
+      "graph_ownership_topology_fully_parsed": false,
+      "source": "PINNED_CHECKPOINT_JSON_AND_RECORDED_OWNER_REPORT",
+      "globals_called": 0
+    },
+    "graph_unpickled": false,
+    "fresh_process_restored": false,
+    "standalone_without_base": false
+  },
+  "seconds": 166.95299999999406,
+  "owned_pickle_is_not_sandbox": true,
+  "model_forward_run": false,
+  "optimizer_step_run": false,
+  "native_gradient_calculation_run": false,
+  "true_update_performed": false,
+  "new_checkpoint_saved": false,
+  "cuda_used": false,
+  "full_standalone_model_cold_restore_verified": false,
+  "autonomous_problem_redefinition_verified": false,
+  "_public_export": {
+    "source_receipt_relative_to_private_run": "actual_saved_restore_01/worker/INDEPENDENT_ACCEPTANCE.json",
+    "source_receipt_sha256": "9a480ca2139677fead27b9db209d552c90476cfd0b41412a038fdd14d8c8c384",
+    "omitted_fields": [
+      "checkpoint",
+      "custody_files"
+    ],
+    "private_run_record_not_rerun_here": true,
+    "raw_receipt_and_external_model_state_not_distributed": true,
+    "hash_binds_origin_only_not_independent_capability_proof": true,
+    "absolute_path_redactions": []
+  }
+}

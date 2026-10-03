@@ -1,0 +1,7 @@
+# Optional lifecycle environment; not required by the dependency-free trace demo.
+# Tested with Python 3.12.14 on Windows. Install torch from the CPU wheel index.
+torch==2.14.0
+numpy==2.5.3
+transformers==5.12.1
+numba==0.67.0
+psutil==7.2.2
