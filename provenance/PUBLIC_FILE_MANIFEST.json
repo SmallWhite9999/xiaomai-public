@@ -37,6 +37,16 @@
       "sha256": "0ff89859f8cc81930e5d1dee4454d0c08619df1f0b6a9af0d3e554ae0cbfa18d"
     },
     {
+      "path": "docs/positioning.md",
+      "bytes": 6538,
+      "sha256": "49f1187c4713ee0096d16a0f30bd6095b8d5779462df794242777049985cc153"
+    },
+    {
+      "path": "docs/progress_2026-10.md",
+      "bytes": 5645,
+      "sha256": "be1148a11f37c9356c04caff6bc257fef2f1df2a328915b9e0b026c7da9ebd6f"
+    },
+    {
       "path": "evidence/CHECKS.json",
       "bytes": 2326,
       "sha256": "11f6659d255eada1f38234c5d78e445ffa687b2c3643e8adb6bc0ad8c05bdedc"
@@ -123,8 +133,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 6385,
-      "sha256": "847c071c528c26caec56ef0969b757548367d8c2b94fed3e3eef520449e8654c"
+      "bytes": 7813,
+      "sha256": "4f6d734d450fc094381da33bb143dd50bc066da204c1b1a93a51b6eb88eb80ab"
     },
     {
       "path": "requirements-lifecycle.txt",
@@ -135,6 +145,21 @@
       "path": "requirements-test.txt",
       "bytes": 44,
       "sha256": "55d4b7f54f9dfc77a2791df4ebd127a2f8a306d73c163785f2a49eafb81875c0"
+    },
+    {
+      "path": "research/engineering.md",
+      "bytes": 3714,
+      "sha256": "dde94c2c65af945f9529ffab564718548ef9609a0d39f4cb34cb274b1e18c536"
+    },
+    {
+      "path": "research/experiments.md",
+      "bytes": 6213,
+      "sha256": "1e3e69ef57b1c08fecebbf5f43c98977a7026b42b32572d43e792148ae71c6a4"
+    },
+    {
+      "path": "research/system_design.md",
+      "bytes": 3298,
+      "sha256": "cdb55118ea03fc7253d13fa1f5a2811924ef3650743a8c06038b74efcc0768f1"
     },
     {
       "path": "src/chunk_training/__init__.py",
