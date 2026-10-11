@@ -38,8 +38,8 @@
     },
     {
       "path": "docs/positioning.md",
-      "bytes": 6538,
-      "sha256": "49f1187c4713ee0096d16a0f30bd6095b8d5779462df794242777049985cc153"
+      "bytes": 7512,
+      "sha256": "fd327a7b5840efe95705718b00e361744fb4f722e1514a6ba94f5c4340f8cfc9"
     },
     {
       "path": "docs/progress_2026-10.md",
@@ -153,8 +153,8 @@
     },
     {
       "path": "research/experiments.md",
-      "bytes": 6213,
-      "sha256": "1e3e69ef57b1c08fecebbf5f43c98977a7026b42b32572d43e792148ae71c6a4"
+      "bytes": 6221,
+      "sha256": "e0a500d0fd6a3ba1577806b2e880eadad6b9640133691d4c77bb5009770397f7"
     },
     {
       "path": "research/system_design.md",

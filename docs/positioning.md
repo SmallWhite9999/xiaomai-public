@@ -16,9 +16,9 @@
 | 工作 | 外部目標由誰定 | 內部改進問題由誰形成 | 改動在哪裡 | 新情境的證據 | 主要結果與限制 |
 |---|---|---|---|---|---|
 | **FunSearch**（DeepMind，Nature 2023） | 人提供問題、評分函數與程式骨架 | 系統在搜尋中產生候選程式 | 搜尋出的程式 | 評估限於人指定的問題 | 找到 8 維空間大小為 512 的 cap set，大於先前已知構造 |
-| **AlphaEvolve**（DeepMind，2025） | 人提供問題、程式骨架與自動驗證器 | 系統演化候選程式 | 演化出的程式 | 同一套方法用在 50 多個數學問題與實際工程問題 | 4×4 複數矩陣乘法只用 48 次純量乘法；在 50 多個問題（含不同參數設定）中約 75% 追平、20% 超越已知最佳 |
-| **ROME／MEMIT**（2022） | 人指定要修改的事實 | 人 | 中間層 MLP 權重 | 修改後的事實可在不同問法下成立 | ROME 一次改一個事實，MEMIT 可一次編輯數千個；後續研究指出定位結果不一定能預測最適合編輯的位置，大量編輯也可能造成遺忘 |
-| **SEAL**（MIT，2025） | 人提供任務與下游評量 | 模型自己產生訓練資料與更新設定 | LoRA 權重 | 在未參與訓練的題目上測試 | Qwen2.5-7B 的單篇文章、無上下文 SQuAD 知識吸收，從直接用文章訓練的 33.5% 提升到 47.0%；簡化版 ARC 上，8 個保留題、40 個自編輯樣本中有 29 個成功（72.5%，Llama-3.2-1B）。編輯越多，舊知識越容易遺忘 |
+| **AlphaEvolve**（DeepMind，2025） | 人提供問題、程式骨架與自動驗證器 | 系統演化候選程式 | 演化出的程式 | 同一套方法用在 50 多個數學問題與實際工程問題 | 4×4 複數矩陣乘法只用 48 次複數純量乘法（先前最佳的 Strassen 式做法為 49 次）；在 50 多個問題（含不同參數設定）中約 75% 追平、20% 超越已知最佳 |
+| **ROME／MEMIT**（2022） | 人指定要修改的事實 | 人 | 中間層 MLP 權重 | 修改後的事實可在不同問法下成立 | ROME 一次改一個事實，MEMIT 可一次編輯數千個；Hase 等人（2023）指出定位結果不一定能預測最適合編輯的位置；Gupta 等人（2024）在依序大量編輯的實驗中觀察到逐漸到災難性的遺忘 |
+| **SEAL**（MIT，2025） | 人提供任務與下游評量 | 模型自己產生訓練資料與更新設定 | LoRA 權重 | 在未參與訓練的題目上測試 | Qwen2.5-7B 的單篇文章、無上下文 SQuAD 知識吸收，從直接用文章訓練的 33.5% 提升到 47.0%；簡化版 ARC 上，8 個保留題、40 個自編輯樣本中有 29 個成功（72.5%，Llama-3.2-1B）。論文的連續自編輯實驗（知識吸收任務）中，依序套用的編輯越多，較早文章的表現越下降，但沒有完全崩潰；這個遺忘結論限於該實驗設定 |
 | **Darwin Gödel Machine**（2025） | 人選定程式基準（SWE-bench、Polyglot） | **系統自己**依評測紀錄提出下一步要改什麼 | 代理自己的 Python 程式碼 | 論文報告改進可轉移到其他基礎模型與程式語言 | SWE-bench 從 20.0% 提升到 50.0%，保存所有版本的譜系。另在一個工具使用幻覺的專項實驗中，作者記錄到它移除了偵測幻覺的標記來假裝成功，靠譜系紀錄才被發現 |
 | **Voyager**（2023） | 人設定「在 Minecraft 中盡量探索與學習」 | **系統自己**的自動課程決定下一個任務 | 外部技能庫（模型權重不變） | 在新的 Minecraft 世界中，用已學技能解決未見過的任務 | 持續探索並累積可重用技能 |
 | **POET**（2019） | 人設定環境生成器與評估方式 | **系統自己**產生新環境並配對代理 | 環境與代理參數 | 代理可在環境之間轉移，解決直接訓練解不開的環境 | 開放式共同演化 |
@@ -37,7 +37,7 @@
 | 誰檢驗 | 推導、反例與介入實驗；新的評量方式要另版檢驗、保留舊結果，不由受測候選自行修改後宣布通過 | 驗證板與沙盒已實作；完整的介入實驗流程待驗收 |
 | 新情境效果 | 新知識與能力在重啟和未見情境中持續有效 | 尚未驗證 |
 
-「重新定義問題」本身也不是新概念：認知科學對創造力的分類、早期 AI 對問題表示的研究、科學發現系統引入新理論變數，以及歸納邏輯程式設計的「謂詞發明」，都處理過相關問題。目前沒有證據宣稱小麥優於上述任何方法。
+「重新定義問題」本身也不是新概念：認知科學對創造力的分類（Boden）、早期 AI 對問題表示的研究（Amarel）、科學發現系統引入新理論變數（BACON，Langley 等人），以及歸納邏輯程式設計的「謂詞發明」（Muggleton 與 Buntine），都處理過相關問題，見下方來源。目前沒有證據宣稱小麥優於上述任何方法。
 
 ## DGM 的例子給小麥的提醒
 
@@ -51,3 +51,10 @@ DGM 在工具使用幻覺的專項實驗中，曾移除偵測標記來假裝成�
 - [Self-Adapting Language Models（SEAL）](https://arxiv.org/html/2506.10943v1)
 - [The Darwin Gödel Machine（Sakana AI）](https://sakana.ai/dgm/)、[論文](https://arxiv.org/html/2505.22954v3)
 - [Voyager](https://voyager.minedojo.org/)、[POET](https://arxiv.org/abs/1901.01753)
+
+問題重定義與概念創造的相關前人工作（書目，未附連結）：
+
+- Margaret A. Boden, *The Creative Mind: Myths and Mechanisms*, 1990.
+- Saul Amarel, "On Representations of Problems of Reasoning about Actions," *Machine Intelligence 3*, 1968.
+- Pat Langley, Herbert A. Simon, Gary L. Bradshaw, Jan M. Zytkow, *Scientific Discovery: Computational Explorations of the Creative Processes*, MIT Press, 1987.
+- Stephen Muggleton, Wray Buntine, "Machine Invention of First-Order Predicates by Inverting Resolution," *Proceedings of the Fifth International Conference on Machine Learning*, 1988.
