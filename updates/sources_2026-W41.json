@@ -1,0 +1,73 @@
+{
+  "schema": "XIAOMAI_WEEKLY_PUBLIC_SOURCES_V1",
+  "id": "2026-W41",
+  "weekStart": "2026-10-05",
+  "weekEnd": "2026-10-11",
+  "researchEvidenceThrough": "2026-10-09",
+  "updatedAt": "2026-10-13",
+  "publicRepository": "https://github.com/SmallWhite9999/xiaomai-public",
+  "sources": [
+    {
+      "id": "october-progress",
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/cb12b7787b61815b02019fe4ef199366603b9581/docs/progress_2026-10.md",
+      "scope": "R13-R16 CPU-only operator, PythonTape, AdamW and tracing checks at specified sizes; R17 bounded CPU cold restore; R18-R19 synthetic CPU; R19 two fresh original-credit updates; six unfinished research areas"
+    },
+    {
+      "id": "positioning",
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/cb12b7787b61815b02019fe4ef199366603b9581/docs/positioning.md",
+      "scope": "Research goal and prior-work boundaries, not a new capability experiment"
+    },
+    {
+      "id": "contributions",
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/cb12b7787b61815b02019fe4ef199366603b9581/docs/contributions.md",
+      "scope": "Author role, AI assistance and upstream provenance boundaries"
+    },
+    {
+      "id": "public-docs-5ad2e49",
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/commit/5ad2e4901a3188e2a2ef24c39ec2990d2427ea30",
+      "scope": "Published documentation; not a model run"
+    },
+    {
+      "id": "public-docs-cb12b77",
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/commit/cb12b7787b61815b02019fe4ef199366603b9581",
+      "scope": "Published corrections; not a model run"
+    },
+    {
+      "id": "next-experiment",
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/cb12b7787b61815b02019fe4ef199366603b9581/docs/next_experiment.md",
+      "scope": "Draft capability experiment design; not an executed model experiment"
+    }
+  ],
+  "boundaries": {
+    "privateReceiptsWeightsAndCheckpointsPublishedInThisIssue": false,
+    "localPathsPrivateHashesOrCredentialsIncluded": false,
+    "newModelRunClaimedForOctober10Or11": false,
+    "September53RequestsCountedAsNewThisWeek": false,
+    "fundraisingStage": "prelaunch",
+    "weeklyAndMonthlySupportPlan": "Author-stated six-month plan: weekly public progress updates; one consolidated results edition each month; one plain-language progress summary emailed each month, six in total, with the same summaries public. This Pre-campaign record does not assert fulfillment has begun.",
+    "provisionalSchedule": "February-July2027 development and August2027 closeout, conditional on successful fundraising and funds plus compute resources needed to start development available by January2027 end",
+    "chartReconstructedFromPublicSummary": true,
+    "October9RetryCountsIncludedInIssue": false,
+    "formatExampleShowsVerbatimRejectedValue": true,
+    "formatExampleRejectedValue": "-1.0 (second prediction, quoted string)",
+    "formatExampleOtherReplyContentOmitted": true,
+    "rejectedValueInPublicOctoberSummary": false,
+    "rejectedValueSource": "Private 2026-10-07 R15 acceptance record; available for academic review",
+    "R15ArmsShareOneIdenticalReply": true,
+    "versionLine": "True 1.2 (tagged 2026-09-22) lineage to research weights revision 8, formal save since 2026-10-09; lineage records private, available for academic review; no new version tag",
+    "R15GenerationExecutions": 2,
+    "R15DistinctProposals": 1,
+    "R15DistinctProposalCountIsNotExecutionCount": true,
+    "allModelStateSaveCompletenessClaimed": false,
+    "R17CountIncludesOneLossScalar": true,
+    "R19LossComparedOutsideTypedBitwiseRecordCount": true,
+    "completeLineagePerFileHashCoverage": false,
+    "lineageFingerprintGaps": [
+      "2026-09-23/2026-09-24",
+      "2026-09-30/2026-10-01"
+    ],
+    "recordPreparationDate": "2026-10-13",
+    "actualPublicReleaseDateConfirmed": false,
+    "FP32Scope": "25 updated research parameter tensors and their fresh gradients; saved state also includes BF16"
+  }
+}

@@ -28,8 +28,8 @@
     },
     {
       "path": "docs/current_status.md",
-      "bytes": 5988,
-      "sha256": "301bad7b2a59a968dc86d270ca1b86e65cac0a20552019cb9cd4b4ec05095efa"
+      "bytes": 10080,
+      "sha256": "9e809e19cb72afd746e45f6838e1d5875598197aaa8355b1ff0cf133d4ec74a8"
     },
     {
       "path": "docs/next_experiment.md",
@@ -133,8 +133,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7813,
-      "sha256": "4f6d734d450fc094381da33bb143dd50bc066da204c1b1a93a51b6eb88eb80ab"
+      "bytes": 8484,
+      "sha256": "80ca70e18686b61a41dc6c686f796b0a3c746a51dfe4bc1988201a60e36e8b13"
     },
     {
       "path": "requirements-lifecycle.txt",
@@ -555,6 +555,26 @@
       "path": "vendor/lifecycle_source/xiaomai_storage/view_ops.py",
       "bytes": 8075,
       "sha256": "386e92628ce6537043cae58104211eceac1aed63482cffca42fbfe0e7f292201"
+    },
+    {
+      "path": "updates/2026-W41.md",
+      "bytes": 26927,
+      "sha256": "6e046a78fd78ad91c29ce0963333d2ca0411d7a2e94bba69433b81e5b6601c35"
+    },
+    {
+      "path": "updates/TEMPLATE.md",
+      "bytes": 3077,
+      "sha256": "f97761fa8546f16b899fdc26a8ac023eae7d36650ad83260ef7acce63584a401"
+    },
+    {
+      "path": "updates/README.md",
+      "bytes": 4436,
+      "sha256": "4614e2abb35068d4cb3a8d036d04898439e84f45cf6bcce40edb71a9291a8989"
+    },
+    {
+      "path": "updates/sources_2026-W41.json",
+      "bytes": 4101,
+      "sha256": "b563eaebf754f28935b43ec29a4665ba4c01e36970915be2c8ab14d8baa50148"
     }
   ],
   "self_excluded": true,

@@ -4,7 +4,7 @@
 
 研究方向與專案整合：**郭俊逸**。完整小麥工作以 ORNITH（Ornith-1.5-9B）開源模型為基礎，逐步把部分研究運算及更新流程接成可追查、可修改、可恢復的程式。
 
-**目前已完成的工程起點：**True CPU 研究分支完成兩次新更新，每次有 25 份研究參數張量改變，並完成保存、新程序接續及最新保存點的獨立恢復核對。10 月起，研究更新已在真 9B 特徵上完成並冷恢復，指定保存點也在兩個新程序中接續下一筆更新（見 [2026 年 10 月進度](docs/progress_2026-10.md)）。本 repo 另外提供可重跑的小型運算追蹤與保存接續示範。Python 改寫、追蹤與保存接續是讓研究可以被檢查的手段，不是研究目標本身。
+**目前已完成的工程起點：**10/3 的 True CPU 研究分支完成兩次新更新，每次有 25 份研究參數張量改變，並完成保存、新程序接續及該批最新保存點的獨立恢復核對。10/7–10/9，限定研究更新已在凍結 9B 的 GPU 特徵上完成，CPU 研究狀態經冷恢復核對；指定保存點也在兩個新程序中接續下一筆原 credit 研究交易（見 [2026 年 10 月進度](docs/progress_2026-10.md)）。本 repo 另外提供可重跑的小型運算追蹤與保存接續示範。Python 改寫、追蹤與保存接續是讓研究可以被檢查的手段，不是研究目標本身。
 
 **自主問題重定義、新機制創造及持久能力提升，仍待驗證。**完整模型也尚未完成全 Python 轉換；這裡的可解釋性是把說明接到指定運算與改變證據，不代表所有內部機制已可見。
 
@@ -12,6 +12,8 @@
 
 | 文件 | 內容 |
 |---|---|
+| [雙語週報 / Bilingual updates](updates/README.md) | 研究敘事、技術紀錄與來源格式 / Research notes, technical records and sources. |
+| [首期 2026-W41 / First issue](updates/2026-W41.md) | 募資前紀錄，研究證據截至 10/9 / Pre-campaign record; research evidence through October 9. |
 | [2026 年 10 月進度](docs/progress_2026-10.md) | R10–R19 與 10/9 停點：真 9B 研究更新、保存接續、算子改寫，以及仍未通過的項目。 |
 | [定位與前人工作](docs/positioning.md) | 和 FunSearch、AlphaEvolve、SEAL、ROME／MEMIT、DGM 等工作的逐項比較，以及小麥還缺哪些證據。 |
 | [實驗紀錄](research/experiments.md) | 問題形成循環 v1–v5，以及本機 GPU 上 53 次請求的經驗與記憶對照：分母、結果與限制。 |
@@ -27,7 +29,7 @@
 | [運算追蹤程式](src/xiaomai_trace/chunk_trace.py) | 記錄受限 chunk 計算圖的前向數值與反向依賴；獨立 reader 逐項重算，檢查記錄中的數值與梯度是否一致。 |
 | [運算追蹤示範](examples/run_trace_demo.py) | 開啟紀錄後結果是否改變，以及紀錄能否獨立讀回。篡改與拒絕案例由[trace 測試](tests/)另外核對。 |
 | [更新與保存示範](examples/run_lifecycle_demo.py) | 以原 PythonTape／PythonAdamW 更新小型合成模型，保存後由新程序恢復，對照下一步輸出、更新、optimizer 與隨機狀態。forward 仍用原生運算，此示範不載入 9B 模型。 |
-| [目前進度](docs/current_status.md) | 小型公開示範與既有 True 模型更新證據各支持哪些結論，還有哪些缺口。 |
+| [目前進度](docs/current_status.md) | 截至 10/9 的 R13–R19 與六項界線，以及 10/3 公開示範與 True 模型歷史快照。 |
 | [下一個能力實驗](docs/next_experiment.md) | 如何檢驗「自行重新定義問題」與「新能力在新問題中繼續有效」。這份計畫尚未執行。 |
 | [架構](docs/architecture.md)與[個人貢獻](docs/contributions.md) | 各元件如何接續、哪些依據開源來源，以及郭俊逸負責的研究方向與專案分工。 |
 
@@ -65,13 +67,13 @@ python -B examples/run_lifecycle_tests.py --out runs/lifecycle-tests
 | [本次公開 lifecycle 示範](evidence/public_lifecycle_20261003/PUBLIC_SUMMARY.json)及[測試摘要](evidence/public_lifecycle_20261003/PUBLIC_TEST_SUMMARY.json) | 小型合成更新、保存與新程序接續的公開入口結果；對應[測試程式](examples/run_lifecycle_tests.py)。 |
 | [True CPU 工程驗收摘要](evidence/true_cpu_20261003/FINAL_ACCEPTANCE.public.json) | 既有私人 run 的整理摘要，支持指定工程結論；沒有在公開示範中重跑，也不能只用公開 repo 獨立重現完整流程。 |
 
-本次執行範圍與依賴環境見[CHECKS.json](evidence/CHECKS.json)。trace 的 26 項測試及 lifecycle 的 145 項測試分開記錄，均為公開合成 CPU 範圍；不計入 True 能力驗證。
+10/3 的執行範圍與依賴環境見[CHECKS.json](evidence/CHECKS.json)。trace 的 26 項測試及 lifecycle 的 145 項測試分開記錄，均為公開合成 CPU 的歷史快照；不計入 True 能力驗證，也不是 10/11 的新執行。
 
 ## 已走到哪裡
 
 2026-10-03 的 True CPU 整合紀錄完成兩次研究分支更新：更新後保存、結束程序，再由新程序恢復並重新計算梯度、更新和保存；最新保存點也另以新程序恢復核對。這些工作建立了「改變能保存、能接續、能檢查」的工程基礎。
 
-公開示範的通過結果只代表其列出的合成運算與保存範圍；完整模型仍有原生 Torch 與外部依賴，沒有在這一版完成 GPU 驗收。各版本及各 run 的證據範圍分開判讀，網站中較早的接續結果不取代本 repo 的日期與收據。
+上述 10/3 公開示範的通過結果只代表其列出的合成運算與保存範圍；該批次沒有完成 GPU 驗收。10/7–10/9 的限定 A100 研究更新與保存接續，另見[目前進度](docs/current_status.md)與[十月進度](docs/progress_2026-10.md)。完整模型仍有原生 Torch 與外部依賴；各版本及各 run 的證據範圍分開判讀，網站中較早的接續結果不取代本 repo 的日期與收據。
 
 ## 來源與授權
 
