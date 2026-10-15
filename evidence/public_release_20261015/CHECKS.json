@@ -1,0 +1,51 @@
+{
+  "schema": "XIAOMAI_PUBLIC_RELEASE_CHECKS_V1",
+  "prepared_date": "2026-10-15",
+  "scope": "Local publication checks on public data and examples; not a rerun of private model experiments.",
+  "python_version": "3.12.14",
+  "numpy_version": "2.3.5",
+  "pytest": {
+    "passed": 44,
+    "failed": 0,
+    "trace_tests": 26,
+    "public_evidence_tests": 18
+  },
+  "public_evidence_reader": {
+    "public_numeric_record_check": "PASS",
+    "model_rerun": false,
+    "full_tensor_recomparison": false,
+    "r20": {
+      "mlp_compared_elements": 151027712,
+      "mlp_max_abs_error": 3.725290298461914e-09,
+      "selected_gradients": 17,
+      "selected_comparison_rows": 18,
+      "selected_comparison_elements": 143777
+    },
+    "multilayer_cpu": {
+      "cases": 14,
+      "case_pass": 0,
+      "case_fail": 14,
+      "roles": 1066,
+      "failed_roles": 365,
+      "elements": 3712272,
+      "failed_elements": 1776,
+      "max_error_over_bound": 39.65447831742038,
+      "scientific_multilayer_FP32_admission": "FAIL"
+    }
+  },
+  "existing_synthetic_trace_demo": {
+    "status": "PASS_CPU_COMPLETE_CHUNK_GRAPH_SCOPE",
+    "events": 1482,
+    "nodes": 542,
+    "reverse_edges": 926,
+    "source_sha256": "53ba6f7cac251c437021ef07993a9f7cfbc585d8dc71c4882b7cb2de2a705e4e",
+    "trace_sha256": "61938fe37a46ae5f1d3a583c5e3e8c06a56af4def208b94b2ff7e8ac3414310b",
+    "private_true_data_read": false
+  },
+  "new_private_model_runs": 0,
+  "GPU_execution": false,
+  "existing_lifecycle_145_tests_rerun": false,
+  "github_actions_status": "NOT_YET_OBSERVED",
+  "core_source_added_or_modified": false,
+  "checks_do_not_establish_model_capability": true
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "XIAOMAI_PUBLIC_EVIDENCE_INDEX_V1",
+  "prepared_date": "2026-10-15",
+  "core_implementation_publication": false,
+  "entries": [
+    {
+      "id": "research_history_202609",
+      "summary": "research_history_202609/SUMMARY.public.json",
+      "provenance": "research_history_202609/PROVENANCE.json",
+      "kind": "historical_report_derivative",
+      "private_model_rerun": false
+    },
+    {
+      "id": "r20_20261013",
+      "summary": "20261013_r20/summary.json",
+      "provenance": "20261013_r20/SOURCE_PROVENANCE.json",
+      "kind": "historical_receipt_derivative",
+      "private_model_rerun": false
+    },
+    {
+      "id": "multilayer_cpu_20261014",
+      "summary": "20261014_multilayer_cpu/summary.json",
+      "cases": "20261014_multilayer_cpu/cases.json",
+      "role_metrics": "20261014_multilayer_cpu/role_metrics.json",
+      "provenance": "20261014_multilayer_cpu/SOURCE_PROVENANCE.json",
+      "kind": "historical_numeric_receipt_derivative",
+      "private_model_rerun": false
+    },
+    {
+      "id": "public_release_checks_20261015",
+      "summary": "public_release_20261015/CHECKS.json",
+      "kind": "new_public_data_and_synthetic_example_checks",
+      "private_model_rerun": false
+    }
+  ]
+}

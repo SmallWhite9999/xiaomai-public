@@ -1,0 +1,32 @@
+{
+  "schema": "XIAOMAI_PUBLIC_WHITELIST_PROVENANCE_V1",
+  "derived_on": "2026-10-15",
+  "export_policy": "Only named numeric results, scientific scope flags and receipt hashes are exported; core implementation, tensors and operational settings are excluded.",
+  "source_snapshots": [
+    {
+      "filename": "ROOT_CUDA_PYTHON_SCOPE.json",
+      "sha256": "e7a7bd819c826a1fd55a004ab2a98792267c1666b0eacf94820dd58647dfe27c",
+      "snapshot_updated_utc": "2026-10-13T11:12:45.822046+00:00",
+      "selected_fields": [
+        "real_model_block_acceptance.MLP_layer0",
+        "layer_acceptance"
+      ]
+    },
+    {
+      "filename": "ROOT_CURRENT_STATE.json",
+      "sha256": "451e5f8e09ce5d942c172f69f049d7ea1be43d3734f80f4dda71cc7252d77930",
+      "snapshot_updated_utc": "2026-10-13T12:27:06.075592+00:00",
+      "selected_fields": [
+        "mlp_v3 numerical result metadata",
+        "jobs: fresh_native17_compact_v3 comparison metadata"
+      ]
+    }
+  ],
+  "artifacts": {
+    "summary.json": "aae89472a9a3db5d21c39aaff00f45916845e45b5d451f84db55e33f7e465d33"
+  },
+  "verification_limits": [
+    "Original private source snapshots are not included. Their hashes identify the exact local readback bytes used for this export.",
+    "The public reader verifies the public artifact hashes and reported scalar consistency, not the private source files, full tensors or author identity."
+  ]
+}

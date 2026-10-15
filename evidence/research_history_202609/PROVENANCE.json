@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "prepared_date": "2026-10-15",
+  "method": "Read frozen Git report bytes with git show COMMIT:PATH, compute SHA-256 over those exact bytes, and manually select aggregate result metrics and limitations. No report body or model conversation was copied.",
+  "source_commit": "b60ffa98f406f396a14fd9a2d5f0a19f7459c2e8",
+  "source_reports": [
+    {
+      "id": "qwen_four_arm_20260905",
+      "family": "muvtt_hf_cloud_v1",
+      "source_repository": "SmallWhite9999/xiaomai-board",
+      "source_commit": "b60ffa98f406f396a14fd9a2d5f0a19f7459c2e8",
+      "source_path": "artifacts/muvtt_hf_cloud_v1/20260905/REPORT_zh.md",
+      "source_sha256": "84c9f30c59f4f0be2e9f4975b726e2b431d25486c12cfc737bc27013c4d779c2",
+      "source_bytes": 6139,
+      "review_scope": "Historical result report read; underlying per-call records were not recomputed in this release."
+    },
+    {
+      "id": "knowledge_formation_20260905",
+      "family": "muvtt_knowledge_formation_v1",
+      "source_repository": "SmallWhite9999/xiaomai-board",
+      "source_commit": "b60ffa98f406f396a14fd9a2d5f0a19f7459c2e8",
+      "source_path": "artifacts/muvtt_knowledge_formation_v1/20260905_codex/REPORT_zh.md",
+      "source_sha256": "b180c92dc7ae6362de84dbc5e10dae6d14ca91564f53794c8e6cf341a2874e57",
+      "source_bytes": 8531,
+      "review_scope": "Historical result report read; underlying per-call records were not recomputed in this release."
+    },
+    {
+      "id": "intrinsic_dual_t4_v7_20260910",
+      "family": "ornith_intrinsic_branch_v1",
+      "source_repository": "SmallWhite9999/xiaomai-board",
+      "source_commit": "b60ffa98f406f396a14fd9a2d5f0a19f7459c2e8",
+      "source_path": "artifacts/ornith_intrinsic_branch_v1/dual_t4_live_20260910/LIVE_REPORT_zh.md",
+      "source_sha256": "320c6532afb9c840c8b7ef9dd2b2d0cb5ea9b5c78d9f6f1e7e3e537f8e6e5a9a",
+      "source_bytes": 12562,
+      "review_scope": "Historical result report read; underlying per-call records were not recomputed in this release."
+    }
+  ],
+  "catalogue_inventory": {
+    "source_file": "FULL_EXPERIMENT_PUBLIC_CANDIDATES.json",
+    "source_sha256": "888afe6cbe8d685e4f853da4b7bd9100207ffabf94ab781eed24fbdc9662c21b",
+    "source_bytes": 55957,
+    "snapshot_date": "2026-10-15",
+    "family_count": 38,
+    "groups": 6,
+    "scope": "All current heads in the saved 200-branch inventory; this metadata alone does not validate capabilities.",
+    "policy_override": "The inventory originally proposed source publication. The user subsequently restricted this release to results, evidence summaries and demonstrations; core source stays private."
+  },
+  "whitelisted_public_fields": [
+    "family and group identifiers",
+    "high-level research topic",
+    "source report path, fixed commit, byte count and SHA-256",
+    "aggregate historical metrics",
+    "reported verdict and explicit limitations",
+    "catalogue source-presence and result-review status"
+  ],
+  "transformations": [
+    "Full report prose omitted",
+    "Model request and response bodies omitted",
+    "Private local paths and host details omitted",
+    "Implementation and operating parameters omitted except coarse experiment scope",
+    "Unmeasured accuracy retained as null",
+    "Smoke and full runs kept separate",
+    "Method generation and engineering controls not promoted into capability success"
+  ],
+  "verification_scope": {
+    "historical_reports_read": 3,
+    "family_identifiers_checked": 38,
+    "group_membership_checked": true,
+    "models_executed": false,
+    "raw_per_call_recomputed": false,
+    "independent_scientific_replication": false
+  }
+}

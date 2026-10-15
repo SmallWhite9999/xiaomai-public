@@ -1,0 +1,55 @@
+{
+  "schema": "XIAOMAI_PUBLIC_R20_EVIDENCE_V1",
+  "artifact_type": "whitelist_derived_numeric_evidence",
+  "derived_on": "2026-10-15",
+  "source_snapshot_dates": {
+    "cuda_python_scope_updated_utc": "2026-10-13T11:12:45.822046+00:00",
+    "root_current_state_updated_utc": "2026-10-13T12:27:06.075592+00:00"
+  },
+  "mlp_layer0": {
+    "weight_numel": 150994944,
+    "compared_elements": 151027712,
+    "max_abs_error": 3.725290298461914e-09,
+    "fixed_atol": 8e-06,
+    "fixed_rtol": 0.0005,
+    "BF16_weights_cast_to_FP32_reference": true,
+    "artificial_input_and_dY_shape": [
+      4,
+      4096
+    ],
+    "retained_numerical_kernels": "Torch CUDA GEMM/basic elementwise kernels",
+    "candidate_autograd_graph": false,
+    "production_BF16": false,
+    "integrated_into_formal_model": false,
+    "full_decoder_layer": false,
+    "status": "PASS_FP32_REAL_WEIGHT_ARTIFICIAL_INPUT_FORWARD_AND_EXPLICIT_VJP_CUDA",
+    "compute_dtype": "FP32",
+    "device": "CUDA",
+    "comparison_receipt_sha256": "a3cd3c0bd96ee724ccca1e3697e0b1eeb21946ea832426e73741e4f101231e7b",
+    "result_receipt_sha256": "07e526f0671f7c541a71b1a0bbf9c69ccc469ecb047bb277d33a787e20b29b07"
+  },
+  "selected_research_gradients": {
+    "status": "PASS_SELECTED_17_RESEARCH_GRADIENT_COMPARISON",
+    "admitted_gradients": 17,
+    "comparison_rows": 18,
+    "comparison_elements": 143777,
+    "fixed_atol": 8e-06,
+    "fixed_rtol": 0.0005,
+    "full_9B_or_complete_layer_acceptance": false,
+    "full_trace_off_on_pair_acceptance": false,
+    "new_saved_checkpoint": false,
+    "comparison_receipt_sha256": "52120ddfb534b65dd0aeb5f66c4926cb4a2e85b6f4af81382c50ace25e432cb7",
+    "result_receipt_sha256": "52428337ba843814efbe4bf7035511bbfcc4554981131e974c71a1f748f2554d"
+  },
+  "complete_decoder_layer_acceptance": {
+    "accepted": 0,
+    "denominator": 32
+  },
+  "limitations": {
+    "model_rerun_by_public_reader": false,
+    "raw_tensor_data_included": false,
+    "full_model_training_acceptance": false,
+    "capability_or_autonomy_acceptance": false,
+    "note": "The selected-gradient comparison and the MLP comparison are separate bounded experiments. Scalar metadata checks do not recompute either tensor comparison."
+  }
+}

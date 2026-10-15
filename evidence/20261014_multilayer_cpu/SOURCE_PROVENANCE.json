@@ -1,0 +1,42 @@
+{
+  "schema": "XIAOMAI_PUBLIC_WHITELIST_PROVENANCE_V1",
+  "derived_on": "2026-10-15",
+  "source_commit": "b60ffa98f406f396a14fd9a2d5f0a19f7459c2e8",
+  "source_snapshot_completed_utc": "2026-10-14T15:01:42.656371+00:00",
+  "export_policy": "Numeric evidence and scientific scope only. No blind runner, model/Tape/VJP/runtime source, model tensors, conversations or operational settings.",
+  "source_snapshots": [
+    {
+      "filename": "round2_status.json",
+      "sha256": "72c9930f57a6c0dfea82421b9ac7bd9dc65aebc11fc93561be7e910d2926aca5"
+    },
+    {
+      "filename": "round2_cases.json",
+      "sha256": "95d25fb69ec77ce886df2af54c8560bbe9b15432da82da938552878e18e50065"
+    },
+    {
+      "filename": "round2_metrics.json",
+      "sha256": "bd5408e6931b9ca1e2d19b660bab576d84fc5eb26367655b6cd8390e539b78af"
+    },
+    {
+      "filename": "round2_report.txt",
+      "sha256": "df8d9d3bdb78d82ca0e049ffea08d8b3849a70dddd097ab9b3bd54f26ec819a6"
+    }
+  ],
+  "original_receipt_pins": {
+    "report_sha256": "df8d9d3bdb78d82ca0e049ffea08d8b3849a70dddd097ab9b3bd54f26ec819a6",
+    "source_lock_sha256": "6485b5ffe62b176b8f6a4614ef16e3804f642dfa1b6c67e520bb45fc0e366c45",
+    "run_result_sha256": "8e99a250afc527a1dc94a5ee6176d6ecb3d4672bd9db866f264e0524de3f24fd",
+    "independent_review_sha256": "90415f251c491dfed68cb050ee8dde328b5110a4e7a5d730911b0f1f83048393"
+  },
+  "artifacts": {
+    "summary.json": "9c9ef35beb9d36cc2bf66dea891b3ac998a206228bdcacc0eaf7cd30a479783d",
+    "cases.json": "3dfe3a8450cfe503973be16e21d2c2264485e96fa3575d63a43c716edc4dc126",
+    "role_metrics.json": "87984060fff5fa1b88a1e250d92f85d5af37f2af3d5be7e71d0e53c016a36bc7"
+  },
+  "historical_field_handling": "The source status publication_of_this_round=false describes the old source snapshot. It is neither overwritten nor used as a current publication verdict.",
+  "verification_limits": [
+    "The private source snapshots, frozen runner and full tensors are not included.",
+    "The public reader recalculates reported worst-coordinate arithmetic and role-to-case-to-summary counts. It cannot independently search full tensors, certify their reported failure counts, or rerun the model.",
+    "SHA-256 pins identify bytes; they do not establish author identity if the entire provenance record is replaced."
+  ]
+}

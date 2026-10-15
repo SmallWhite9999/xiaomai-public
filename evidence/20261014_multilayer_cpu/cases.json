@@ -1,0 +1,300 @@
+{
+  "schema": "XIAOMAI_PUBLIC_MULTILAYER_CPU_CASES_V1",
+  "cases": [
+    {
+      "case": "stack4_T7_weak_decay",
+      "roles": 61,
+      "bad_roles": 4,
+      "bad_elements": 6,
+      "total_elements": 188360,
+      "worst_ratio": 2.941228905817732,
+      "worst_role": "grad:layers.0.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          61,
+          8
+        ],
+        "flat_index": 3912,
+        "candidate": -0.0019243186106905341,
+        "reference": -0.0019507171948373416,
+        "abs_difference": 2.639858414680749e-05,
+        "bound": 8.97535859741867e-06,
+        "error_over_bound": 2.941228905817732
+      }
+    },
+    {
+      "case": "stack4_T7_strong_decay",
+      "roles": 61,
+      "bad_roles": 7,
+      "bad_elements": 16,
+      "total_elements": 188360,
+      "worst_ratio": 2.728208791040034,
+      "worst_role": "grad:layers.0.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          119,
+          48
+        ],
+        "flat_index": 7664,
+        "candidate": -0.0037350384518504143,
+        "reference": -0.00370815447170797,
+        "abs_difference": 2.688398014244432e-05,
+        "bound": 9.854077235853984e-06,
+        "error_over_bound": 2.728208791040034
+      }
+    },
+    {
+      "case": "stack4_T64_weak_decay",
+      "roles": 61,
+      "bad_roles": 18,
+      "bad_elements": 80,
+      "total_elements": 206600,
+      "worst_ratio": 10.704037617404977,
+      "worst_role": "grad:layers.1.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          99,
+          37
+        ],
+        "flat_index": 6373,
+        "candidate": -0.0026557445526123047,
+        "reference": -0.0027561277008456564,
+        "abs_difference": 0.0001003831482333517,
+        "bound": 9.378063850422827e-06,
+        "error_over_bound": 10.704037617404977
+      }
+    },
+    {
+      "case": "stack4_T64_strong_decay",
+      "roles": 61,
+      "bad_roles": 16,
+      "bad_elements": 46,
+      "total_elements": 206600,
+      "worst_ratio": 14.908331157551808,
+      "worst_role": "grad:embed_tokens.weight",
+      "worst_point": {
+        "index": [
+          91,
+          47
+        ],
+        "flat_index": 5871,
+        "candidate": -0.0023956298828125,
+        "reference": -0.00225952039440358,
+        "abs_difference": 0.0001361094884089198,
+        "bound": 9.12976019720179e-06,
+        "error_over_bound": 14.908331157551808
+      }
+    },
+    {
+      "case": "stack4_T65_weak_decay",
+      "roles": 61,
+      "bad_roles": 19,
+      "bad_elements": 82,
+      "total_elements": 206920,
+      "worst_ratio": 6.6398820590095475,
+      "worst_role": "grad:layers.1.linear_attn.in_proj_z.weight",
+      "worst_point": {
+        "index": [
+          10,
+          14
+        ],
+        "flat_index": 654,
+        "candidate": -0.02104949951171875,
+        "reference": -0.02117291138541333,
+        "abs_difference": 0.00012341187369457884,
+        "bound": 1.8586455692706664e-05,
+        "error_over_bound": 6.6398820590095475
+      }
+    },
+    {
+      "case": "stack4_T65_strong_decay",
+      "roles": 61,
+      "bad_roles": 16,
+      "bad_elements": 56,
+      "total_elements": 206920,
+      "worst_ratio": 14.30656935135193,
+      "worst_role": "grad:layers.2.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          45,
+          28
+        ],
+        "flat_index": 2908,
+        "candidate": 0.00464630126953125,
+        "reference": 0.004499661356096141,
+        "abs_difference": 0.0001466399134351093,
+        "bound": 1.024983067804807e-05,
+        "error_over_bound": 14.30656935135193
+      }
+    },
+    {
+      "case": "stack4_T130_weak_decay",
+      "roles": 61,
+      "bad_roles": 26,
+      "bad_elements": 112,
+      "total_elements": 227720,
+      "worst_ratio": 27.097743360497773,
+      "worst_role": "grad:layers.1.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          63,
+          57
+        ],
+        "flat_index": 4089,
+        "candidate": 0.0094757080078125,
+        "reference": 0.009825615964579981,
+        "abs_difference": 0.0003499079567674812,
+        "bound": 1.2912807982289989e-05,
+        "error_over_bound": 27.097743360497773
+      }
+    },
+    {
+      "case": "stack4_T130_strong_decay",
+      "roles": 61,
+      "bad_roles": 20,
+      "bad_elements": 61,
+      "total_elements": 227720,
+      "worst_ratio": 9.535877811248806,
+      "worst_role": "grad:layers.1.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          41,
+          63
+        ],
+        "flat_index": 2687,
+        "candidate": 0.007494926452636719,
+        "reference": 0.00738343566000621,
+        "abs_difference": 0.00011149079263050865,
+        "bound": 1.1691717830003104e-05,
+        "error_over_bound": 9.535877811248806
+      }
+    },
+    {
+      "case": "stack4_T257_weak_decay",
+      "roles": 61,
+      "bad_roles": 28,
+      "bad_elements": 147,
+      "total_elements": 268360,
+      "worst_ratio": 12.697276135938353,
+      "worst_role": "grad:layers.0.linear_attn.in_proj_z.weight",
+      "worst_point": {
+        "index": [
+          33,
+          41
+        ],
+        "flat_index": 2153,
+        "candidate": 0.04619789123535156,
+        "reference": 0.04659528605125196,
+        "abs_difference": 0.00039739481590039816,
+        "bound": 3.129764302562598e-05,
+        "error_over_bound": 12.697276135938353
+      }
+    },
+    {
+      "case": "stack4_T257_strong_decay",
+      "roles": 61,
+      "bad_roles": 23,
+      "bad_elements": 95,
+      "total_elements": 268360,
+      "worst_ratio": 9.865396894945267,
+      "worst_role": "grad:layers.0.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          72,
+          55
+        ],
+        "flat_index": 4663,
+        "candidate": 0.0038857460021972656,
+        "reference": 0.003984322639454696,
+        "abs_difference": 9.857663725743038e-05,
+        "bound": 9.992161319727347e-06,
+        "error_over_bound": 9.865396894945267
+      }
+    },
+    {
+      "case": "stack8_T17_weak_decay",
+      "roles": 114,
+      "bad_roles": 44,
+      "bad_elements": 233,
+      "total_elements": 371408,
+      "worst_ratio": 12.242696359050607,
+      "worst_role": "grad:layers.0.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          118,
+          35
+        ],
+        "flat_index": 7587,
+        "candidate": -0.012677298858761787,
+        "reference": -0.012502823154135886,
+        "abs_difference": 0.00017447570462590135,
+        "bound": 1.4251411577067942e-05,
+        "error_over_bound": 12.242696359050607
+      }
+    },
+    {
+      "case": "stack8_T17_strong_decay",
+      "roles": 114,
+      "bad_roles": 36,
+      "bad_elements": 115,
+      "total_elements": 371408,
+      "worst_ratio": 4.644938502920589,
+      "worst_role": "grad:layers.4.linear_attn.in_proj_qkv.weight",
+      "worst_point": {
+        "index": [
+          4,
+          25
+        ],
+        "flat_index": 281,
+        "candidate": -0.006932792719453573,
+        "reference": -0.0068796554232490705,
+        "abs_difference": 5.313729620450274e-05,
+        "bound": 1.1439827711624535e-05,
+        "error_over_bound": 4.644938502920589
+      }
+    },
+    {
+      "case": "stack8_T65_weak_decay",
+      "roles": 114,
+      "bad_roles": 56,
+      "bad_elements": 445,
+      "total_elements": 386768,
+      "worst_ratio": 27.022869040686473,
+      "worst_role": "grad:embed_tokens.weight",
+      "worst_point": {
+        "index": [
+          70,
+          62
+        ],
+        "flat_index": 4542,
+        "candidate": -0.003101348876953125,
+        "reference": -0.002846702884998109,
+        "abs_difference": 0.0002546459919550159,
+        "bound": 9.423351442499054e-06,
+        "error_over_bound": 27.022869040686473
+      }
+    },
+    {
+      "case": "stack8_T65_strong_decay",
+      "roles": 114,
+      "bad_roles": 52,
+      "bad_elements": 282,
+      "total_elements": 386768,
+      "worst_ratio": 39.65447831742038,
+      "worst_role": "d_inputs_embeds",
+      "worst_point": {
+        "index": [
+          0,
+          22,
+          8
+        ],
+        "flat_index": 1416,
+        "candidate": -0.00748443603515625,
+        "reference": -0.007027857203078192,
+        "abs_difference": 0.0004565788320780584,
+        "bound": 1.1513928601539096e-05,
+        "error_over_bound": 39.65447831742038
+      }
+    }
+  ]
+}

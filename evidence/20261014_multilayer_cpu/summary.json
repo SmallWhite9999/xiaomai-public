@@ -1,0 +1,87 @@
+{
+  "schema": "XIAOMAI_PUBLIC_MULTILAYER_CPU_SUMMARY_V1",
+  "artifact_type": "whitelist_derived_numeric_evidence",
+  "derived_on": "2026-10-15",
+  "source_snapshot_completed_utc": "2026-10-14T15:01:42.656371+00:00",
+  "scientific_multilayer_FP32_admission": "FAIL",
+  "execution_context": {
+    "device": "CPU",
+    "synthetic_inputs": true,
+    "candidate_dtype": "FP32",
+    "reference_dtype": "FP64",
+    "hidden": 64,
+    "intermediate": 128,
+    "vocab": 97,
+    "layers": [
+      4,
+      8
+    ],
+    "threads_per_model_process": 1,
+    "recorded_environment": "Windows / Python 3.12.14 / Torch 2.14.0+cpu"
+  },
+  "numeric_contract": {
+    "atol": 8e-06,
+    "rtol": 0.0005,
+    "elementwise_rule": "abs(candidate-reference) <= atol + rtol*abs(reference)"
+  },
+  "case_ids": [
+    "stack4_T7_weak_decay",
+    "stack4_T7_strong_decay",
+    "stack4_T64_weak_decay",
+    "stack4_T64_strong_decay",
+    "stack4_T65_weak_decay",
+    "stack4_T65_strong_decay",
+    "stack4_T130_weak_decay",
+    "stack4_T130_strong_decay",
+    "stack4_T257_weak_decay",
+    "stack4_T257_strong_decay",
+    "stack8_T17_weak_decay",
+    "stack8_T17_strong_decay",
+    "stack8_T65_weak_decay",
+    "stack8_T65_strong_decay"
+  ],
+  "reported_totals": {
+    "cases": 14,
+    "case_pass": 0,
+    "case_fail": 14,
+    "roles": 1066,
+    "failed_roles": 365,
+    "elements": 3712272,
+    "failed_elements": 1776,
+    "max_error_over_bound": 39.65447831742038
+  },
+  "reference_reliability": {
+    "reported_pass": 14,
+    "cases": 14,
+    "public_reader_reexecutes_reference": false
+  },
+  "G_comparison": {
+    "raw_byte_equivalence_pass": 14,
+    "cases": 14,
+    "full_protocol_verdict": "FAIL",
+    "note": "Reported bit equivalence is separate from the full protocol verdict; shared negative controls did not all pass."
+  },
+  "negative_controls": {
+    "pass": 104,
+    "fail": 8,
+    "total": 112,
+    "cases_complete_pass": 10,
+    "cases_with_failures": 4,
+    "known_issue": "In four noncontiguous cases, single-point and NaN injection could modify a reshape copy instead of the intended clone owner."
+  },
+  "unapplied_control_fix": {
+    "synthetic_tests_pass": 6,
+    "applied_to_original_run": false,
+    "new_model_admission": false
+  },
+  "limitations": {
+    "GPU_execution": false,
+    "True_integration": false,
+    "new_update_save_cold_restore_acceptance": false,
+    "full_tensors_included": false,
+    "public_reader_model_execution": false,
+    "failure_root_cause_proven": false,
+    "threshold_relaxed": false,
+    "reported_counts_independently_recounted_from_tensors": false
+  }
+}
