@@ -8,8 +8,8 @@
     },
     {
       "path": ".github/workflows/trace.yml",
-      "bytes": 415,
-      "sha256": "a1a26a0145d5c41daa02dc843f3adbfb47c5d3b99cf72a3342b7fe636d0f7099"
+      "bytes": 483,
+      "sha256": "b2cf0635cdf48a7b28cec367a1a204ec32effa1aa35a3a70c9d66208da831d29"
     },
     {
       "path": ".gitignore",
@@ -23,8 +23,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8484,
-      "sha256": "80ca70e18686b61a41dc6c686f796b0a3c746a51dfe4bc1988201a60e36e8b13"
+      "bytes": 9940,
+      "sha256": "bc888ab0cdfd82bc179a02583542007310be16d2cb0a407fdbee87c76a11ca0d"
     },
     {
       "path": "docs/architecture.md",
@@ -38,8 +38,8 @@
     },
     {
       "path": "docs/current_status.md",
-      "bytes": 10080,
-      "sha256": "9e809e19cb72afd746e45f6838e1d5875598197aaa8355b1ff0cf133d4ec74a8"
+      "bytes": 11536,
+      "sha256": "79c95a947258ff499c3cd9c962f12e335b85f39b50fd1aad6405f138cff4c2bd"
     },
     {
       "path": "docs/evidence_guide.md",
@@ -58,8 +58,8 @@
     },
     {
       "path": "docs/progress_2026-10.md",
-      "bytes": 5645,
-      "sha256": "be1148a11f37c9356c04caff6bc257fef2f1df2a328915b9e0b026c7da9ebd6f"
+      "bytes": 6501,
+      "sha256": "623ee5f339e6df475f71f254392247d2979bcde3995230a1a6255496548d9525"
     },
     {
       "path": "docs/publication_scope.md",
@@ -207,6 +207,11 @@
       "sha256": "f345ad857e41506ddf34db626e111c518dfeecd8be0a7bd5271ca808aa2de5d3"
     },
     {
+      "path": "provenance/PUBLICATION_20261015.json",
+      "bytes": 1024,
+      "sha256": "dfbef78f5a0cb72da29c63a31acfba1c02f9014f89cf08ab975c1947b430ec75"
+    },
+    {
       "path": "provenance/TRUE_EVIDENCE_EXPORTS.json",
       "bytes": 2610,
       "sha256": "6cf804757c046e72f6f8a0991def72815142282b3479898753fd869dbb358002"
@@ -292,6 +297,11 @@
       "sha256": "6e046a78fd78ad91c29ce0963333d2ca0411d7a2e94bba69433b81e5b6601c35"
     },
     {
+      "path": "updates/2026-W42.md",
+      "bytes": 9718,
+      "sha256": "df77e961b0166cb328135f35c77fd291da609c664039890e5f462ac6b9eb8d26"
+    },
+    {
       "path": "updates/README.md",
       "bytes": 4436,
       "sha256": "4614e2abb35068d4cb3a8d036d04898439e84f45cf6bcce40edb71a9291a8989"
@@ -305,6 +315,11 @@
       "path": "updates/sources_2026-W41.json",
       "bytes": 4101,
       "sha256": "b563eaebf754f28935b43ec29a4665ba4c01e36970915be2c8ab14d8baa50148"
+    },
+    {
+      "path": "updates/sources_2026-W42.json",
+      "bytes": 1882,
+      "sha256": "135eeca30a847622bada317a0560513d63dd6c8506b9b1b9babf4ce68e67e70c"
     },
     {
       "path": "vendor/lifecycle_source/LICENSES/Apache-2.0.txt",

@@ -1,0 +1,24 @@
+{
+  "schema": "XIAOMAI_RESULTS_EVIDENCE_PUBLICATION_V1",
+  "prepared_date": "2026-10-15",
+  "repository": "SmallWhite9999/xiaomai-public",
+  "baseline_commit": "90ef12f32fa84c30a698fbce75ba06a50506fd85",
+  "public_evidence_commit": "1bb9b049c71fdfb337a1c692012d06908f63d4c4",
+  "scope": "Results, experiment evidence summaries and small examples; complete core implementations remain private.",
+  "catalogue_families": 38,
+  "historical_reports_reviewed": 3,
+  "other_catalogue_families_not_result_reviewed_this_release": 35,
+  "new_python_files": [
+    "examples/read_admission_summary.py",
+    "tests/test_public_evidence.py"
+  ],
+  "core_source_added_or_modified": false,
+  "src_and_vendor_unchanged": true,
+  "new_global_license_added": false,
+  "new_private_model_runs": 0,
+  "GPU_execution": false,
+  "local_pytest_passed": 44,
+  "check_receipt": "../evidence/public_release_20261015/CHECKS.json",
+  "public_manifest": "PUBLIC_FILE_MANIFEST.json",
+  "website_deployed_by_this_release": false
+}

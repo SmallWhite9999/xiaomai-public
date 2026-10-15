@@ -1,0 +1,50 @@
+{
+  "schema": "XIAOMAI_WEEKLY_SOURCES_V1",
+  "issue": "2026-W42",
+  "prepared_date": "2026-10-15",
+  "evidenceThrough": "2026-10-14",
+  "public_evidence_commit": "1bb9b049c71fdfb337a1c692012d06908f63d4c4",
+  "sources": [
+    {
+      "label": {
+        "zh": "R20限定GPU結果",
+        "en": "Bounded R20 GPU result"
+      },
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/1bb9b049c71fdfb337a1c692012d06908f63d4c4/evidence/20261013_r20/summary.json"
+    },
+    {
+      "label": {
+        "zh": "多層CPU失敗與控制",
+        "en": "Multilayer CPU failures and controls"
+      },
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/1bb9b049c71fdfb337a1c692012d06908f63d4c4/evidence/20261014_multilayer_cpu/summary.json"
+    },
+    {
+      "label": {
+        "zh": "歷史正負結果",
+        "en": "Historical positive and negative results"
+      },
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/1bb9b049c71fdfb337a1c692012d06908f63d4c4/evidence/research_history_202609/SUMMARY.public.json"
+    },
+    {
+      "label": {
+        "zh": "38家族研究目錄",
+        "en": "38-family research catalogue"
+      },
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/1bb9b049c71fdfb337a1c692012d06908f63d4c4/research/catalogue.md"
+    },
+    {
+      "label": {
+        "zh": "公開範圍",
+        "en": "Publication scope"
+      },
+      "url": "https://github.com/SmallWhite9999/xiaomai-public/blob/1bb9b049c71fdfb337a1c692012d06908f63d4c4/docs/publication_scope.md"
+    }
+  ],
+  "boundaries": [
+    "Historical model results were not rerun for publication.",
+    "Complete core implementations remain private.",
+    "Evidence-reader PASS preserves scientific FP32 FAIL.",
+    "Research-family directory presence is not capability evidence."
+  ]
+}

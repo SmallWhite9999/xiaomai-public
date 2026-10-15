@@ -1,4 +1,4 @@
-name: Public trace checks
+name: Public evidence and trace checks
 on: [push, pull_request, workflow_dispatch]
 jobs:
   trace:
@@ -12,3 +12,4 @@ jobs:
       - run: python -m pip install -e ".[test]"
       - run: python -m pytest -q
       - run: python examples/run_trace_demo.py --out runs/trace-demo
+      - run: python examples/read_admission_summary.py
