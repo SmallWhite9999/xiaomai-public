@@ -1,0 +1,81 @@
+{
+  "schema": "XIAOMAI_PUBLIC_ENGINEERING_SUMMARY_V1",
+  "experiment_date": "2026-10-18",
+  "publication_type": "allowlisted_derivative_summary",
+  "scope": {
+    "model_scale": "9B-class",
+    "device_class": "NVIDIA A100",
+    "selected_parameter_tensors": 47,
+    "input_origin": "host_literal",
+    "input_prefix": "a",
+    "input_target": " b",
+    "model_generated_proposal": false,
+    "all_model_parameters_trained": false
+  },
+  "observations": {
+    "actual_updates": 2,
+    "first_update_changed_parameter_tensors": 6,
+    "first_update_changed_master_tensors": 10,
+    "new_process_restored_first_checkpoint": true,
+    "restored_state_matches_first_update": true,
+    "restored_rng_matches_saved_projection": true,
+    "second_update_changed_parameter_tensors": 9,
+    "second_update_changed_master_tensors": 12,
+    "second_update_gradient_roles": 14,
+    "second_update_nonzero_gradient_roles": 6,
+    "second_update_gradients_all_finite": true,
+    "final_step": 2,
+    "final_revision": 2,
+    "second_checkpoint_differs_from_first": true,
+    "second_checkpoint_native_durable_receipt": true,
+    "second_checkpoint_loaded_by_third_process": false
+  },
+  "preserved_failures": [
+    {
+      "case": "original_first_update_harness",
+      "outcome": "JOB_TIMEOUT",
+      "still_a_failure": true
+    },
+    {
+      "case": "initial_recovery_pointer",
+      "outcome": "FAIL",
+      "still_a_failure": true
+    }
+  ],
+  "not_established": [
+    "all_parameter_9B_training",
+    "arbitrary_freeform_migration",
+    "general_numerical_equivalence",
+    "long_sequence_acceptance",
+    "model_led_research_or_autonomy",
+    "causal_or_transferable_capability_gain",
+    "performance_optimality_or_speedup",
+    "second_checkpoint_third_process_restore",
+    "production_deployment"
+  ],
+  "review_scope": {
+    "origin": "project_internal_independent_result_reader",
+    "public_third_party_reproduction": false,
+    "model_rerun_during_public_summary_preparation": false,
+    "private_records_withheld": true,
+    "raw_record_commitments": [
+      {
+        "record": "engineering_receipt",
+        "sha256": "f99a36b3fafd8b9fcf30a8cada533dc3fea6162b2ecf5912b9ace4262216c95e"
+      },
+      {
+        "record": "independent_result_review",
+        "sha256": "9cfb8efbb4994e657c4945979117dd2321bef2f221f4c70e9f90446e9ef84768"
+      }
+    ],
+    "commitment_limit": "Hashes bind a later-disclosed record to these exact bytes. They do not independently prove execution, correctness, or capability."
+  },
+  "historical_results": {
+    "multilayer_cpu_20261014_passed": 0,
+    "multilayer_cpu_20261014_cases": 14,
+    "shared_negative_controls_20261014_passed": 104,
+    "shared_negative_controls_20261014_cases": 112,
+    "historical_failures_superseded": false,
+    "reason": "The 2026-10-18 continuation case uses a different acceptance contract."
+  }
+}
